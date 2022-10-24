@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <p class="hero">Weather API</p>
+
+      <div class="field is-grouped search">
+        <i class="fa-solid fa-droplet fa-4x"></i>
+        <p class="control is-expanded">
+          <input
+            class="input"
+            type="text"
+            placeholder="CityName"
+            name="input"
+            id="input"
+          />
+        </p>
+        <p class="control">
+          <a class="button is-info" id="btn"> Search </a>
+        </p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
