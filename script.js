@@ -1,7 +1,6 @@
+const key = config.KEY;
 const btnEl = document.getElementById("btn");
 const container = document.getElementById("container");
-const key = "3727e6df52e0ca7f0482d054586ff709";
-const key2 = "4413ef538f09be9e15aaa60cb6100c05";
 
 async function fetchWeather(city) {
   const response = await fetch(
@@ -30,6 +29,7 @@ const getDate = function () {
   return withSlashes;
 };
 
+// Changes background display based on the time of day
 const skyColor = function () {
   const d = new Date();
   let hour = d.getHours();
@@ -45,12 +45,10 @@ const skyColor = function () {
 
 skyColor();
 
+// Converts UNIX returned string into week day
 const unixToDay = function (timeStamp) {
   const milli = timeStamp * 1000;
   const d = new Date(milli);
-  const month = d.getMonth();
-  const day = d.getDay();
-  const year = d.getFullYear();
   return d.toLocaleString("en-US", { weekday: "long" });
 };
 
