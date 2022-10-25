@@ -179,3 +179,31 @@
 .card3 h3 {
   font-weight: bolder;
 }
+
+footer {
+  position: fixed;
+  background-color: white;
+  bottom: 0%;
+  height: 9%;
+  width: 100%;
+}
+
+.footer-text {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 0.5%;
+  padding-top: 1%;
+}
+.logo1 {
+  position: fixed;
+  height: 90px;
+  margin-left: 0.5%;
+  padding-bottom: 2.5%;
+}
+
+.logo2 {
+  position: fixed;
+  height: 90px;
+  margin-left: 7%;
+  padding-bottom: 2%;
+}
