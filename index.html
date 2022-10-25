@@ -18,10 +18,24 @@
   </head>
   <body>
     <div id="container">
-      <p class="hero">Weather API</p>
+      <h1 class="hero">
+        Weather API
+        <div class="icon-container">
+          <img
+            src="./png/002-water-droplet.png"
+            alt="droplet icon"
+            class="icon"
+          />
+          <img
+            src="./png/001-snowflake.png"
+            alt="snowflake icon"
+            class="icon"
+          />
+          <img src="./png/003-wind.png" alt="wind icon" class="icon" />
+        </div>
+      </h1>
 
       <div class="field is-grouped search">
-        <i class="fa-solid fa-droplet fa-4x"></i>
         <p class="control is-expanded">
           <input
             class="input"
@@ -35,8 +49,51 @@
           <a class="button is-info" id="btn"> Search </a>
         </p>
       </div>
+
+      <div id="result-div">
+        <h1 id="result-h1"></h1>
+        <h2 id="result-h2"></h2>
+        <p id="result-p1"></p>
+        <p id="result-p2"></p>
+        <p id="result-p3"></p>
+        <p id="result-p4"></p>
+      </div>
+
+      <div id="card1">
+        <h3 id="h3-1"></h3>
+        <p id="p1-1"></p>
+        <p id="p1-2"></p>
+        <p id="p1-3"></p>
+      </div>
+
+      <div id="card2">
+        <h3 id="h3-2"></h3>
+        <p id="p2-1"></p>
+        <p id="p2-2"></p>
+        <p id="p2-3"></p>
+      </div>
+
+      <div id="card3">
+        <h3 id="h3-3"></h3>
+        <p id="p3-1"></p>
+        <p id="p3-2"></p>
+        <p id="p3-3"></p>
+      </div>
     </div>
 
     <script src="./script.js"></script>
+    <div>
+      Icons made by
+      <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+    <div>
+      Icons made by
+      <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware"
+        >Good Ware</a
+      >
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
   </body>
 </html>
