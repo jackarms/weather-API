@@ -35,11 +35,11 @@ const skyColor = function () {
   const d = new Date();
   let hour = d.getHours();
   console.log(hour);
-  if ((hour) => 19 || hour < 4) {
+  if (hour >= 19 || hour < 4) {
     container.classList.add("containerNight");
-  } else if (hour > 4 && hour < 10) {
+  } else if (hour >= 4 && hour < 10) {
     container.classList.add("containerMorning");
-  } else if (hour > 10 && hour < 19) {
+  } else if (hour >= 10 && hour < 19) {
     container.classList.add("containerDay");
   }
 };
