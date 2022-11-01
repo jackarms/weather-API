@@ -97,7 +97,11 @@ btnEl.addEventListener("click", () => {
         h3El.textContent = `On ${unixToDay(results.daily[i].dt)}`;
         p1El.textContent = `The temperature will be ${results.daily[i].temp.day}℉`;
         p2El.textContent = `The humidity will be ${results.daily[i].humidity}%`;
-        p3El.textContent = `With a ${results.daily[i].rain}% chance of rain`;
+        if (results.daily[i].rain == undefined) {
+          p3El.textContent = `With a 0% chance of rain`;
+        } else {
+          p3El.textContent = `With a ${results.daily[i].rain}% chance of rain`;
+        }
         divEl.classList.add(`card${[i]}`);
       }
     });
